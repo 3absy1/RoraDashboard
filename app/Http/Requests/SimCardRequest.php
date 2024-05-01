@@ -22,9 +22,10 @@ class SimCardRequest extends FormRequest
     public function rules()
     {
         return [
-            'phone' => 'required|min:11|regex:/^(0|1)$/',
+            'phone' => 'required|min:11',
         ];
     }
+
 
     public function messages()
     {
